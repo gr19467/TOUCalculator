@@ -3,6 +3,7 @@
 <head>
     <title>Time of Use Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <SCRIPT TYPE="text/javascript" SRC="functions.js"></SCRIPT>
 </head>
 <body>
     <div class = "portfolio">
@@ -85,7 +86,7 @@
             </form>
         </div>
         <div class="first-item">99%</div>
-        <div class="first-item">9.00</div>
+        <div class="first-item"></div>
         <div class="first-item">$109.48</div>
 
         <div class="first-item">Solar</div>
@@ -95,7 +96,7 @@
             </form>
         </div>
         <div class="first-item">20%</div>
-        <div class="first-item">2.39</div>
+        <div class="first-item"></div>
         <div class="first-item">$43.00</div>
 
         <div class="first-item">Wind</div>
@@ -105,7 +106,7 @@
             </form>
         </div>
         <div class="first-item">44%</div>
-        <div class="first-item">1.32</div>
+        <div class="first-item"></div>
         <div class="first-item">$69.00</div>
 
         <div class="first-item">Small Hydro</div>
@@ -115,7 +116,7 @@
             </form>
         </div>
         <div class="first-item">22%</div>
-        <div class="first-item">0.88</div>
+        <div class="first-item"></div>
         <div class="first-item">$26.00</div>
 
         <div class="first-item">Large Hydro</div>
@@ -125,17 +126,18 @@
             </form>
         </div>
         <div class="first-item">36%</div>
-        <div class="first-item">4.34</div>
+        <div class="first-item"></div>
         <div class="first-item">$53.55</div>
 
         <div class="first-item">Coal</div>
         <div class="second-item">
-            <form action="">
-                <input type="text">
+            <form ONSUBMIT="CalculateSquare(); return false;">
+                <input type="text" id="InputValue">
+                <input type="submit" VALUE="Calculate">
             </form>
         </div>
         <div class="first-item">109%</div>
-        <div class="first-item">10.94</div>
+        <div class="first-item" id="OutputValue"></div>
         <div class="first-item">$39.00</div>
 
         <div class="first-item">Natural Gas</div>
@@ -145,7 +147,7 @@
             </form>
         </div>
         <div class="first-item">20%</div>
-        <div class="first-item">2.97</div>
+        <div class="first-item"></div>
         <div class="first-item">$67.00</div>
 
         <div class="first-item">Geothermal</div>
@@ -155,7 +157,7 @@
             </form>
         </div>
         <div class="first-item">12%</div>
-        <div class="first-item">0.98</div>
+        <div class="first-item"></div>
         <div class="first-item">$87</div>
 
         <div class="first-item">Total CAPACITY</div>
