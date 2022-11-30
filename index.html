@@ -6,6 +6,7 @@
     <SCRIPT TYPE="text/javascript" SRC="functions.js"></SCRIPT>
 </head>
 <body>
+
     <div class = "portfolio">
         <div class = "first">HL&P Energy Resource Portfolio</div>
 
@@ -81,90 +82,97 @@
 
         <div class="first-item">Market</div> 
         <div class="second-item">
-            <form action="">
-                <input type="text">
+            <form onsubmit="CalculateMarket(); return false;">
+                <input type="text" id="MarketValue">
+                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">99%</div>
-        <div class="first-item"></div>
-        <div class="first-item">$109.48</div>
+        <div class="first-item" id="OutputMarketMW"></div>
+        <div class="first-item" id="OutputMarketPrice"></div>
 
         <div class="first-item">Solar</div>
         <div class="second-item">
-            <form action="">
-                <input type="text">
+            <form onsubmit="CalculateSolar(); return false;">
+                <input type="text" id="SolarValue">
+                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">20%</div>
-        <div class="first-item"></div>
-        <div class="first-item">$43.00</div>
+        <div class="first-item" id="OutputSolarMW"></div>
+        <div class="first-item" id="OutputSolarPrice"></div>
 
         <div class="first-item">Wind</div>
         <div class="second-item">
-            <form action="">
-                <input type="text">
+            <form onsubmit="CalculateWind(); return false;">
+                <input type="text" id="WindValue">
+                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">44%</div>
-        <div class="first-item"></div>
-        <div class="first-item">$69.00</div>
+        <div class="first-item" id="OutputWindMW"></div>
+        <div class="first-item" id="OutputWindPrice"></div>
 
         <div class="first-item">Small Hydro</div>
         <div class="second-item">
-            <form action="">
-                <input type="text">
+            <form onsubmit="CalculateSmall(); return false;">
+                <input type="text" id="SmallValue">
+                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">22%</div>
-        <div class="first-item"></div>
-        <div class="first-item">$26.00</div>
+        <div class="first-item" id="OutputSmallMW"></div>
+        <div class="first-item" id="OutputSmallPrice"></div>
 
         <div class="first-item">Large Hydro</div>
         <div class="second-item">
-            <form action="">
-                <input type="text">
+            <form onsubmit="CalculateLarge(); return false;">
+                <input type="text" id="LargeValue">
+                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">36%</div>
-        <div class="first-item"></div>
-        <div class="first-item">$53.55</div>
+        <div class="first-item" id="OutputLargeMW"></div>
+        <div class="first-item" id="OutputLargePrice"></div>
 
         <div class="first-item">Coal</div>
         <div class="second-item">
-            <form ONSUBMIT="CalculateSquare(); return false;">
-                <input type="text" id="InputValue">
-                <input type="submit" VALUE="Calculate">
+            <form onsubmit="CalculateCoal(); return false;">
+                <input type="text" id="CoalValue">
+                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">109%</div>
-        <div class="first-item" id="OutputValue"></div>
-        <div class="first-item">$39.00</div>
+        <div class="first-item" id="OutputCoalMW"></div>
+        <div class="first-item" id="OutputCoalPrice"></div>
 
         <div class="first-item">Natural Gas</div>
         <div class="second-item">
-            <form action="">
-                <input type="text">
+            <form onsubmit="CalculateGas(); return false;">
+                <input type="text" id="GasValue">
+                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">20%</div>
-        <div class="first-item"></div>
-        <div class="first-item">$67.00</div>
+        <div class="first-item" id="OutputGasMW"></div>
+        <div class="first-item" id="OutputGasPrice"></div>
 
         <div class="first-item">Geothermal</div>
         <div class="second-item">
-            <form action="">
-                <input type="text">
+            <form onsubmit="CalculateGeo(); return false;">
+                <input type="text" id="GeoValue">
+                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">12%</div>
-        <div class="first-item"></div>
-        <div class="first-item">$87</div>
+        <div class="first-item" id="OutputGeoMW"></div>
+        <div class="first-item" id="OutputGeoPrice"></div>
 
         <div class="first-item">Total CAPACITY</div>
-        <div class="first-item">73</div>
+        <div class="first-item" id="OutputCapacity"></div>
         <div class="first-item"></div>
-        <div class="first-item">32.82</div>
-        <div class="first-item">$61.75</div>
+        <div class="first-item" id="OutputMW"></div>
+        <div class="first-item" id="OutputPrice"></div>
     </div>
 
     <div class="third">
