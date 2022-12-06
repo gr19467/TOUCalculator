@@ -71,7 +71,7 @@ function CalculateMW(){
     var GasValue = document.getElementById("OutputGasMW").value;
     var GeoValue = document.getElementById("OutputGeoMW").value;
 
-    tot = parseFloat(MarketValue) + parseFloat(SolarValue) + parseFloat(WindValue) + parseFloat(SmallValue) + parseFloat(LargeValue) + parseFloat(CoalValue) + parseFloat(GasValue) + parseFloat(GeoValue);
+    tot = (parseFloat(MarketValue) + parseFloat(SolarValue) + parseFloat(WindValue) + parseFloat(SmallValue) + parseFloat(LargeValue) + parseFloat(CoalValue) + parseFloat(GasValue) + parseFloat(GeoValue)).toFixed(2);
 
     document.getElementById("OutputMW").value = tot;
 }

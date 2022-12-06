@@ -73,6 +73,11 @@
     color: white;
 }
 
+input:read-only{
+    background-color: rgb(233,233,233);
+    border: none;
+}
+
 /*Third Grid*/
 
 .third{
