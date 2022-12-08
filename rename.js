@@ -1,5 +1,3 @@
-function CalculateWind() {
-    var WindValue = document.getElementById("WindValue").value;
-    var Answer = (WindValue * .99).toFixed(2);
-    document.getElementById("OutputWindMW").value = Answer;
-}
+var MW = document.getElementById("OutputGeoMW").value;
+var Actual = (MW * 87.00).toFixed(2);
+document.getElementById("OutputGeoPrice").value = "$" + Actual;

@@ -71,134 +71,209 @@
         <div class="grid-item">$61.75</div>
     </div>
 
+    <!--Enter resources-->
     <div class = "enter">
         <div class = "title">Enter Resources Here to Explore Energy Resource Options and Cost</div>
-
+        
+        <!--First Row-->
         <div class="first-row">Resource</div>
         <div class="first-row">Resource MW Capacity</div>
         <div class="first-row">Capacity Factor</div> 
         <div class="first-row">Availabile MW</div>
         <div class="first-row">$/MWh</div>
+        <div class="first-row">Actual Total Price</div>
 
-        <div class="first-item">Market</div> 
+        <!--Market Row-->
+        <div class="first-item">Market</div>
+        <!--Market Input-->
         <div class="second-item">
-            <form onsubmit="CalculateMarket(); CalculateCapacity(); CalculateMW(); return false;">
+            <form onsubmit="CalculateMarket(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
                 <input type="number" value ="0" id="MarketValue">
                 <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">99%</div>
+        <!--Output Market MW-->
         <div class="first-item">
             <form>
                 <input type="number" value="0" id="OutputMarketMW" readonly>
             </form>
         </div>
-        <div class="first-item" id="OutputMarketPrice">$109.48</div>
+        <div class="first-item">$109.48</div>
+        <!--Output Market Price-->
+        <div class="first-item">
+            <form>
+                <input type="text" value="$0" id="OutputMarketPrice" readonly>
+            </form>
+        </div>
 
+        <!--Solar Row-->
         <div class="first-item">Solar</div>
+        <!--Solar Input-->
         <div class="second-item">
-            <form onsubmit="CalculateSolar(); CalculateCapacity(); CalculateMW(); return false;">
+            <form onsubmit="CalculateSolar(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
                 <input type="number" value ="0" id="SolarValue">
                 <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">20%</div>
+        <!--Output Solar MW-->
         <div class="first-item">
             <form>
                 <input type="number" value="0" id="OutputSolarMW" readonly>
             </form>
         </div>
-        <div class="first-item" id="OutputSolarPrice">$43.00</div>
+        <div class="first-item">$43.00</div>
+        <!--Output Solar Price-->
+        <div class="first-item">
+            <form>
+                <input type="text" value="$0" id="OutputSolarPrice" readonly>
+            </form>
+        </div>
 
+        <!--Wind Row-->
         <div class="first-item">Wind</div>
+        <!--Wind Input-->
         <div class="second-item">
-            <form onsubmit="CalculateWind(); CalculateCapacity(); CalculateMW(); return false;">
+            <form onsubmit="CalculateWind(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
                 <input type="number" value ="0" id="WindValue">
                 <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">44%</div>
+        <!--Output Wind MW-->
         <div class="first-item">
             <form>
                 <input type="text" value="0" id="OutputWindMW" readonly>
             </form>
         </div>
-        <div class="first-item" id="OutputWindPrice">$69.00</div>
+        <div class="first-item">$69.00</div>
+        <!--Output Wind Price-->
+        <div class="first-item">
+            <form>
+                <input type="text" value="$0" id="OutputWindPrice" readonly>
+            </form>
+        </div>
 
+        <!--Small Row-->
         <div class="first-item">Small Hydro</div>
+        <!--Small Input-->
         <div class="second-item">
-            <form onsubmit="CalculateSmall(); CalculateCapacity(); CalculateMW(); return false;">
+            <form onsubmit="CalculateSmall(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
                 <input type="number" value ="0" id="SmallValue">
                 <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">22%</div>
+        <!--Output Small MW-->
         <div class="first-item">
             <form>
                 <input type="text" value="0" id="OutputSmallMW" readonly>
             </form>
         </div>
-        <div class="first-item" id="OutputSmallPrice">$26.00</div>
+        <div class="first-item">$26.00</div>
+        <!--Output Small Price-->
+        <div class="first-item">
+            <form>
+                <input type="text" value="$0" id="OutputSmallPrice" readonly>
+            </form>
+        </div>
 
+        <!--Large Row-->
         <div class="first-item">Large Hydro</div>
+        <!--Large Input-->
         <div class="second-item">
-            <form onsubmit="CalculateLarge(); CalculateCapacity(); CalculateMW(); return false;">
+            <form onsubmit="CalculateLarge(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
                 <input type="number" value ="0" id="LargeValue">
                 <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">36%</div>
+        <!--Output Large MW-->
         <div class="first-item">
             <form>
                 <input type="text" value="0" id="OutputLargeMW" readonly>
             </form>
         </div>
-        <div class="first-item" id="OutputLargePrice">$53.55</div>
+        <div class="first-item">$53.55</div>
+        <!--Output Large Price-->
+        <div class="first-item">
+            <form>
+                <input type="text" value="$0" id="OutputLargePrice" readonly>
+            </form>
+        </div>
 
+        <!--Coal Row-->
         <div class="first-item">Coal</div>
+        <!--Coal Input-->
         <div class="second-item">
-            <form onsubmit="CalculateCoal(); CalculateCapacity(); CalculateMW(); return false;">
+            <form onsubmit="CalculateCoal(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
                 <input type="number" value ="0" id="CoalValue">
                 <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">109%</div>
+        <!--Output Coal MW-->
         <div class="first-item">
             <form>
                 <input type="text" value="0" id="OutputCoalMW" readonly>
             </form>
         </div>
-        <div class="first-item" id="OutputCoalPrice">$39.00</div>
+        <div class="first-item">$39.00</div>
+        <!--Output Coal Price-->
+        <div class="first-item">
+            <form>
+                <input type="text" value="$0" id="OutputCoalPrice" readonly>
+            </form>
+        </div>
 
+        <!--Gas Row-->
         <div class="first-item">Natural Gas</div>
+        <!--Gas Input-->
         <div class="second-item">
-            <form onsubmit="CalculateGas(); CalculateCapacity(); CalculateMW(); return false;">
+            <form onsubmit="CalculateGas(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
                 <input type="number" value ="0" id="GasValue">
                 <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">20%</div>
+        <!--Output Gas MW-->
         <div class="first-item">
             <form>
                 <input type="text" value="0" id="OutputGasMW" readonly>
             </form>
         </div>
-        <div class="first-item" id="OutputGasPrice">$67.00</div>
+        <div class="first-item">$67.00</div>
+        <!--Output Gas Price-->
+        <div class="first-item">
+            <form>
+                <input type="text" value="$0" id="OutputGasPrice" readonly>
+            </form>
+        </div>
 
+        <!--Geo Row-->
         <div class="first-item">Geothermal</div>
+        <!--Geo Input-->
         <div class="second-item">
-            <form onsubmit="CalculateGeo(); CalculateCapacity(); CalculateMW(); return false;">
+            <form onsubmit="CalculateGeo(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
                 <input type="number" value ="0" id="GeoValue">
                 <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">12%</div>
+        <!--Output Geo MW-->
         <div class="first-item">
             <form>
                 <input type="text" value="0" id="OutputGeoMW" readonly>
             </form>
         </div>
-        <div class="first-item" id="OutputGeoPrice">$87.00</div>
+        <div class="first-item">$87.00</div>
+        <!--Output Geo Price-->
+        <div class="first-item">
+            <form>
+                <input type="text" value="$0" id="OutputGeoPrice" readonly>
+            </form>
+        </div>
 
         <div class="first-item">Total CAPACITY</div>
         <div class="first-item">
@@ -212,7 +287,16 @@
                 <input type="text" value ="0" id="OutputMW" readonly>
             </form>
         </div>
-        <div class="first-item" id="OutputPrice">$61.75</div>
+        <div class="first-item">
+            <form action="">
+                <input type="text" value="$494.03" id="OutputPrice" readonly>
+            </form>
+        </div>
+        <div class="first-item">
+            <form>
+                <input type="text" value="0" id="OutputActual" readonly>
+            </form>
+        </div>
     </div>
 
     <div class="third">

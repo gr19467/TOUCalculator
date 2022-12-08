@@ -39,8 +39,8 @@
     padding: 2px;
 
     display: grid;
-    grid-template-areas: 'main main main main main'
-    'auto auto auto auto auto';
+    grid-template-areas: 'main main main main main main'
+    'auto auto auto auto auto auto';
 
     margin-top: 7vh;
 }
@@ -76,6 +76,7 @@
 input:read-only{
     background-color: rgb(233,233,233);
     border: none;
+    font-weight: bold;
 }
 
 /*Third Grid*/
