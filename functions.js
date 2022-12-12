@@ -121,4 +121,20 @@ function CalculatePrice(){
     total = (parseFloat(MarketValue * 109.48) + parseFloat(SolarValue * 43.00) + parseFloat(WindValue * 69.00) + parseFloat(SmallValue * 26.00) + parseFloat(LargeValue * 53.55) + parseFloat(CoalValue * 39.00) + parseFloat(GasValue * 67.00) + parseFloat(GeoValue * 87.00)).toFixed(2);
 
     document.getElementById("OutputActual").value = "$" + total;
+
+    var MW = document.getElementById("OutputMW").value;
+    cost = (total/MW).toFixed(2);
+    document.getElementById("OutputCost").value = "$" + cost;
+
+    adequacy = (MW/50).toFixed(2);
+    ad = (adequacy * 100).toFixed();
+    
+    document.getElementById("OutputAdequacy").value = ad + "%";
+    if(ad >= 99){
+        document.getElementById("OutputAdequacy").style = 'color:green';
+    }else{
+        document.getElementById("OutputAdequacy").style = 'color:red'
+    }
+
+    document.getElementById("MWA").value = MW;
 }

@@ -107,3 +107,30 @@ input:read-only{
 
     padding: 10px;
 }
+
+#OutputCost{
+    background-color: rgb(29, 69, 138);
+
+    color: white;
+    font-size: 150%;
+
+    width: 25vw;
+}
+
+#OutputAdequacy{
+    background-color: rgb(29, 69, 138);
+
+    color: white;
+    font-size: 150%;
+
+    width: 25vw;
+}
+
+#MWA{
+    background-color: rgb(29, 69, 138);
+
+    color: white;
+    font-size: 150%;
+
+    width: 25vw;
+}

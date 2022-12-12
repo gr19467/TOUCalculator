@@ -304,13 +304,25 @@
         <div class = "third-item">Portfolio cost $MWh</div>
 
         <div class = "num-item">50 MW</div>
-        <div class = "num-item">$61.75</div>
+        <div class = "num-item">
+            <form>
+                <input type="text" value="$0" id="OutputCost" readonly>
+            </form>
+        </div>
 
         <div class = "third-item">MW AVAILABLE IN PORTFOLIO</div>
         <div class = "third-item">Resource Adequacy</div>
 
-        <div class = "num-item">50</div>
-        <div class = "num-item">100%</div>
+        <div class = "num-item">
+            <form>
+                <input type="text" value="0" id="MWA" readonly>
+            </form>
+        </div>
+        <div class = "num-item">
+            <form>
+                <input type="text" value="0%" id="OutputAdequacy" readonly>
+            </form>
+        </div>
     </div>
 </body>
 </html>
