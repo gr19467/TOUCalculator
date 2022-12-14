@@ -42,7 +42,7 @@
     grid-template-areas: 'main main main main main main'
     'auto auto auto auto auto auto';
 
-    margin-top: 7vh;
+    margin-top: 3vh;
 }
 
 .first-item{

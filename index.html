@@ -7,70 +7,6 @@
 </head>
 <body>
 
-    <div class = "portfolio">
-        <div class = "first">HL&P Energy Resource Portfolio</div>
-
-        <div class="top-row">Resource</div>
-        <div class="top-row">Resource MW Capacity</div>
-        <div class="top-row">Capacity Factor</div> 
-        <div class="top-row">Availabile MW</div>
-        <div class="top-row">$/MWh</div>
-
-        <div class="grid-item">Market</div> 
-        <div class="grid-item">9</div>
-        <div class="grid-item">99%</div>
-        <div class="grid-item">9.00</div>
-        <div class="grid-item">$109.48</div>
-
-        <div class="grid-item">Solar</div>
-        <div class="grid-item">12</div>
-        <div class="grid-item">20%</div>
-        <div class="grid-item">2.39</div>
-        <div class="grid-item">$43.00</div>
-
-        <div class="grid-item">Wind</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">44%</div>
-        <div class="grid-item">1.32</div>
-        <div class="grid-item">$69.00</div>
-
-        <div class="grid-item">Small Hydro</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">22%</div>
-        <div class="grid-item">0.88</div>
-        <div class="grid-item">$26.00</div>
-
-        <div class="grid-item">Large Hydro</div>
-        <div class="grid-item">12</div>
-        <div class="grid-item">36%</div>
-        <div class="grid-item">4.34</div>
-        <div class="grid-item">$53.55</div>
-
-        <div class="grid-item">Coal</div>
-        <div class="grid-item">10</div>
-        <div class="grid-item">109%</div>
-        <div class="grid-item">10.94</div>
-        <div class="grid-item">$39.00</div>
-
-        <div class="grid-item">Natural Gas</div>
-        <div class="grid-item">15</div>
-        <div class="grid-item">20%</div>
-        <div class="grid-item">2.97</div>
-        <div class="grid-item">$67.00</div>
-
-        <div class="grid-item">Geothermal</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">12%</div>
-        <div class="grid-item">0.98</div>
-        <div class="grid-item">$87.00</div>
-
-        <div class="grid-item">Total CAPACITY</div>
-        <div class="grid-item">73</div>
-        <div class="grid-item"></div>
-        <div class="grid-item">32.82</div>
-        <div class="grid-item">$61.75</div>
-    </div>
-
     <!--Enter resources-->
     <div class = "enter">
         <div class = "title">Enter Resources Here to Explore Energy Resource Options and Cost</div>
@@ -87,9 +23,8 @@
         <div class="first-item">Market</div>
         <!--Market Input-->
         <div class="second-item">
-            <form onsubmit="CalculateMarket(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
+            <form>
                 <input type="number" value ="0" id="MarketValue">
-                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">99%</div>
@@ -111,9 +46,8 @@
         <div class="first-item">Solar</div>
         <!--Solar Input-->
         <div class="second-item">
-            <form onsubmit="CalculateSolar(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
+            <form>
                 <input type="number" value ="0" id="SolarValue">
-                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">20%</div>
@@ -135,9 +69,8 @@
         <div class="first-item">Wind</div>
         <!--Wind Input-->
         <div class="second-item">
-            <form onsubmit="CalculateWind(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
+            <form>
                 <input type="number" value ="0" id="WindValue">
-                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">44%</div>
@@ -159,9 +92,8 @@
         <div class="first-item">Small Hydro</div>
         <!--Small Input-->
         <div class="second-item">
-            <form onsubmit="CalculateSmall(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
+            <form>
                 <input type="number" value ="0" id="SmallValue">
-                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">22%</div>
@@ -183,9 +115,8 @@
         <div class="first-item">Large Hydro</div>
         <!--Large Input-->
         <div class="second-item">
-            <form onsubmit="CalculateLarge(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
+            <form>
                 <input type="number" value ="0" id="LargeValue">
-                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">36%</div>
@@ -207,9 +138,8 @@
         <div class="first-item">Coal</div>
         <!--Coal Input-->
         <div class="second-item">
-            <form onsubmit="CalculateCoal(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
+            <form>
                 <input type="number" value ="0" id="CoalValue">
-                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">109%</div>
@@ -231,9 +161,8 @@
         <div class="first-item">Natural Gas</div>
         <!--Gas Input-->
         <div class="second-item">
-            <form onsubmit="CalculateGas(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
+            <form>
                 <input type="number" value ="0" id="GasValue">
-                <input type="submit" value="Calculate">
             </form>
         </div>
         <div class="first-item">20%</div>
@@ -255,7 +184,7 @@
         <div class="first-item">Geothermal</div>
         <!--Geo Input-->
         <div class="second-item">
-            <form onsubmit="CalculateGeo(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
+            <form onsubmit="Calculate(); CalculateCapacity(); CalculateMW(); CalculatePrice(); return false;">
                 <input type="number" value ="0" id="GeoValue">
                 <input type="submit" value="Calculate">
             </form>

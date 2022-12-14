@@ -1,81 +1,67 @@
-function CalculateMarket() {
+function Calculate(){
     var MarketValue = document.getElementById("MarketValue").value;
-    var Answer = (MarketValue * .99).toFixed(2);
-    document.getElementById("OutputMarketMW").value = Answer;
+    var MarketAnswer = (MarketValue * .99).toFixed(2);
+    document.getElementById("OutputMarketMW").value = MarketAnswer;
 
-    var MW = document.getElementById("OutputMarketMW").value;
-    var Actual = (MW * 109.48).toFixed(2);
-    document.getElementById("OutputMarketPrice").value = "$" + Actual;
-}
+    var MarketMW = document.getElementById("OutputMarketMW").value;
+    var ActualMarket = (MarketMW * 109.48).toFixed(2);
+    document.getElementById("OutputMarketPrice").value = "$" + ActualMarket;
 
-function CalculateSolar() {
     var SolarValue = document.getElementById("SolarValue").value;
-    var Answer = (SolarValue * .2).toFixed(2);
-    document.getElementById("OutputSolarMW").value = Answer;
+    var SolarAnswer = (SolarValue * .2).toFixed(2);
+    document.getElementById("OutputSolarMW").value = SolarAnswer;
 
-    var MW = document.getElementById("OutputSolarMW").value;
-    var Actual = (MW * 43.00).toFixed(2);
-    document.getElementById("OutputSolarPrice").value = "$" + Actual;
-}
+    var SolarMW = document.getElementById("OutputSolarMW").value;
+    var ActualSolar = (SolarMW * 43.00).toFixed(2);
+    document.getElementById("OutputSolarPrice").value = "$" + ActualSolar;
 
-function CalculateWind() {
     var WindValue = document.getElementById("WindValue").value;
-    var Answer = (WindValue * .44).toFixed(2);
-    document.getElementById("OutputWindMW").value = Answer;
+    var SmallAnswer = (WindValue * .44).toFixed(2);
+    document.getElementById("OutputWindMW").value = SmallAnswer;
 
-    var MW = document.getElementById("OutputWindMW").value;
-    var Actual = (MW * 69.00).toFixed(2);
-    document.getElementById("OutputWindPrice").value = "$" + Actual;
-}
+    var WindMW = document.getElementById("OutputWindMW").value;
+    var ActualWind = (WindMW * 69.00).toFixed(2);
+    document.getElementById("OutputWindPrice").value = "$" + ActualWind;
 
-function CalculateSmall() {
     var SmallValue = document.getElementById("SmallValue").value;
-    var Answer = (SmallValue * .22).toFixed(2);
-    document.getElementById("OutputSmallMW").value = Answer;
+    var SmallAnswer = (SmallValue * .22).toFixed(2);
+    document.getElementById("OutputSmallMW").value = SmallAnswer;
 
-    var MW = document.getElementById("OutputSmallMW").value;
-    var Actual = (MW * 26.00).toFixed(2);
-    document.getElementById("OutputSmallPrice").value = "$" + Actual;
-}
+    var SmallMW = document.getElementById("OutputSmallMW").value;
+    var ActualSmall = (SmallMW * 26.00).toFixed(2);
+    document.getElementById("OutputSmallPrice").value = "$" + ActualSmall;
 
-function CalculateLarge() {
     var LargeValue = document.getElementById("LargeValue").value;
-    var Answer = (LargeValue * .36).toFixed(2);
-    document.getElementById("OutputLargeMW").value = Answer;
+    var LargeAnswer = (LargeValue * .36).toFixed(2);
+    document.getElementById("OutputLargeMW").value = LargeAnswer;
 
-    var MW = document.getElementById("OutputLargeMW").value;
-    var Actual = (MW * 53.55).toFixed(2);
-    document.getElementById("OutputLargePrice").value = "$" + Actual;
-}
+    var LargeMW = document.getElementById("OutputLargeMW").value;
+    var ActualLarge = (LargeMW * 53.55).toFixed(2);
+    document.getElementById("OutputLargePrice").value = "$" + ActualLarge;
 
-function CalculateCoal() {
     var CoalValue = document.getElementById("CoalValue").value;
-    var Answer = (CoalValue * 1.09).toFixed(2);
-    document.getElementById("OutputCoalMW").value = Answer;
+    var CoalAnswer = (CoalValue * 1.09).toFixed(2);
+    document.getElementById("OutputCoalMW").value = CoalAnswer;
 
-    var MW = document.getElementById("OutputCoalMW").value;
-    var Actual = (MW * 39.00).toFixed(2);
-    document.getElementById("OutputCoalPrice").value = "$" + Actual;
-}
+    var CoalMW = document.getElementById("OutputCoalMW").value;
+    var ActualCoal = (CoalMW * 39.00).toFixed(2);
+    document.getElementById("OutputCoalPrice").value = "$" + ActualCoal;
 
-function CalculateGas() {
     var GasValue = document.getElementById("GasValue").value;
-    var Answer = (GasValue * .2).toFixed(2);
-    document.getElementById("OutputGasMW").value = Answer;
+    var GasAnswer = (GasValue * .2).toFixed(2);
+    document.getElementById("OutputGasMW").value = GasAnswer;
 
-    var MW = document.getElementById("OutputGasMW").value;
-    var Actual = (MW * 67.00).toFixed(2);
-    document.getElementById("OutputGasPrice").value = "$" + Actual;
-}
+    var GasMW = document.getElementById("OutputGasMW").value;
+    var ActualGas = (GasMW * 67.00).toFixed(2);
+    document.getElementById("OutputGasPrice").value = "$" + ActualGas;
 
-function CalculateGeo() {
     var GeoValue = document.getElementById("GeoValue").value;
-    var Answer = (GeoValue * .12).toFixed(2);
-    document.getElementById("OutputGeoMW").value = Answer;
+    var GeoAnswer = (GeoValue * .12).toFixed(2);
+    document.getElementById("OutputGeoMW").value = GeoAnswer;
 
-    var MW = document.getElementById("OutputGeoMW").value;
-    var Actual = (MW * 87.00).toFixed(2);
-    document.getElementById("OutputGeoPrice").value = "$" + Actual;
+    var GeoMW = document.getElementById("OutputGeoMW").value;
+    var ActualGeo = (GeoMW * 87.00).toFixed(2);
+    document.getElementById("OutputGeoPrice").value = "$" + ActualGeo;
 }
 
 function CalculateCapacity(){
